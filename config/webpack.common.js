@@ -149,7 +149,7 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader',
-        exclude: [helpers.root('src/index.html')]
+        exclude: [helpers.root('src/main/resources/index.html')]
       },
 
       /* File loader for supporting images, for example, in CSS files.
