@@ -1,7 +1,3 @@
-/**
- * @author: @AngularClass
- */
-
 const webpack = require('webpack');
 const helpers = require('./helpers');
 
@@ -72,7 +68,7 @@ module.exports = {
      *
      * See: http://webpack.github.io/docs/configuration.html#resolve-extensions
      */
-    extensions: ['', '.ts', '.tsx', '.js', '.jsx',  '.json'],
+    extensions: ['', '.webpack.js', '.ts', '.tsx', '.js', '.jsx',  '.json'],
 
     // Make sure root is src
     root: helpers.root('src'),
@@ -118,7 +114,7 @@ module.exports = {
         loaders: [
           'awesome-typescript-loader'
         ],
-        exclude: [/\.(spec|e2e)\.tsx?$/]
+        exclude: [/\.(Spec|E2E)\.tsx?$/]
       },
 
       /*
@@ -255,7 +251,7 @@ module.exports = {
     module: false,
     clearImmediate: false,
     setImmediate: false,
-    fs: "empty"
+    fs: 'empty'
   }
 
 };
